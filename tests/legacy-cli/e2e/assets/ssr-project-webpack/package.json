@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node init && ng serve",
+    "build": "node init && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "dev:ssr": "ng run ssr-project-webpack:serve-ssr",
+    "dev:ssr": "node init && ng run ssr-project-webpack:serve-ssr",
     "serve:ssr": "node dist/ssr-project-webpack/server/main.js",
-    "build:ssr": "ng build && ng run ssr-project-webpack:server",
+    "build:ssr": "node init && ng build && ng run ssr-project-webpack:server",
     "prerender": "ng run ssr-project-webpack:prerender"
   },
   "private": true,
